@@ -49,12 +49,13 @@ function AppHeader() {
 					<div>
 						<Link href="/">
 							{activeTheme === 'dark' ? (
+								// TODO: Make this your name
 								<Image
 									src={logoDark}
 									className="w-36 cursor-pointer"
 									alt="Dark Logo"
 									width={150}
-									height={120}
+									height={1}
 								/>
 							) : (
 								<Image
@@ -133,7 +134,7 @@ function AppHeader() {
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
-							Hire Me
+							Email Me
 						</button>
 					</div>
 				</div>
@@ -169,7 +170,7 @@ function AppHeader() {
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
-							Hire Me
+							Email Me
 						</button>
 					</div>
 
