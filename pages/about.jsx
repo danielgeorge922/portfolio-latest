@@ -18,6 +18,7 @@ function about() {
 				<AboutMeBio />
 			</motion.div>
 
+
 			{/** Counter without paddings */}
 			<motion.div
 				initial={{ opacity: 0 }}
