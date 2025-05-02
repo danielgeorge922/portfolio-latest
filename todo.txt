@@ -1,0 +1,6 @@
+1. change the front page to be my headshot in some capacity instead of the guy at the desk
+2. Download CV should actually work and replace stoman instances with my name
+3. Add an optional design docs prop to the project
+4. Replace About Me with experience layout
+5. Add projects / experience
+6. https://material-foundation.github.io/material-theme-builder/
