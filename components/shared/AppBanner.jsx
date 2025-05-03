@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+import HeroProfilePic from '../HeroProfilePic';
 
 function AppBanner() {
 	const [activeTheme] = useThemeSwitcher();
@@ -24,7 +25,7 @@ function AppBanner() {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, Iam Daniel George
+					Hi, I am Daniel George
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -34,9 +35,9 @@ function AppBanner() {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-700 dark:text-gray-200"
 				>
-					A Full-Stack Developer With a Focus on Back-end Development,
+					A Full-Stack Developer
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -65,17 +66,9 @@ function AppBanner() {
 				initial={{ opacity: 0, y: -180 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+				className="sm:w-1/2 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
-					layout="responsive"
-					src={
-						activeTheme === 'dark'
-							? '/images/developer.svg'
-							: '/images/developer-dark.svg'
-					}
-					alt="Developer"
-				/>
+				<HeroProfilePic/>
 			</motion.div>
 		</motion.section>
 	);
